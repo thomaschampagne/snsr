@@ -1,16 +1,12 @@
 import fs from "fs";
 import { Snsr } from "./snsr.js";
 
+const directoryOutput = "/output";
+
 Snsr.get()
   .then(output => {
     const sensorsOutput = JSON.stringify(output, null, 2);
-    const directoryOutput = "/output";
-
-    // Create dir if missing
-    if (!fs.existsSync(directoryOutput)) {
-      fs.mkdirSync(directoryOutput);
-    }
-
+    
     // Save sensor output
     fs.writeFile(`${directoryOutput}/sensors.json`, sensorsOutput, err => {
       if (err) {
