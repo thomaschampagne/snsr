@@ -1,5 +1,5 @@
 import fs from "fs";
-import { Snsr } from "./snsr.js";
+import { Snsr } from "./snsr.mjs";
 
 const directoryOutput = "/output";
 

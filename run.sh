@@ -12,5 +12,5 @@ sensors-detect --auto > /output/sensors-detect.log
 echo "$(logDate) Sensors detected. Output in /output/sensors-detect.log"
 
 echo "$(logDate) Parsing sensors..."
-node ./src/index.js
+node ./src/index.mjs
 echo "$(logDate) Sensors parsed. Results in /output/sensors.json"
