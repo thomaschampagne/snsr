@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "List available system sensors through 'lm-sensors' linux package",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.mjs"
   },
   "author": "Thomas Champagne",
   "license": "MIT"
